@@ -17,14 +17,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rB-TA-0g0">
+                                <rect key="frame" x="100" y="485" width="214" height="99"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86u-zN-tlf">
+                                <rect key="frame" x="100" y="151" width="214" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="SKe-aH-AsE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-W9-e9z">
+                                <rect key="frame" x="100" y="303" width="214" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="cz0-rL-m9H"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wkg-W9-e9z" firstAttribute="leading" secondItem="5rB-TA-0g0" secondAttribute="leading" id="BG0-ZN-JtF"/>
+                            <constraint firstItem="86u-zN-tlf" firstAttribute="leading" secondItem="Wkg-W9-e9z" secondAttribute="leading" id="Dbt-Ja-9dA"/>
+                            <constraint firstItem="86u-zN-tlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FRU-e0-kNd"/>
+                            <constraint firstItem="86u-zN-tlf" firstAttribute="trailing" secondItem="Wkg-W9-e9z" secondAttribute="trailing" id="MI1-SA-9JP"/>
+                            <constraint firstItem="86u-zN-tlf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Wbk-wA-i0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5rB-TA-0g0" secondAttribute="bottom" constant="278" id="g8w-gN-MGo"/>
+                            <constraint firstItem="5rB-TA-0g0" firstAttribute="top" secondItem="Wkg-W9-e9z" secondAttribute="bottom" constant="83" id="h5N-eR-C9b"/>
+                            <constraint firstItem="Wkg-W9-e9z" firstAttribute="top" secondItem="86u-zN-tlf" secondAttribute="bottom" constant="53" id="mjw-yB-32E"/>
+                            <constraint firstItem="Wkg-W9-e9z" firstAttribute="trailing" secondItem="5rB-TA-0g0" secondAttribute="trailing" id="rHd-7L-Wvq"/>
+                            <constraint firstItem="86u-zN-tlf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="xqW-oL-cyi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="5kk-Im-wNH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1161" y="329"/>
+            <point key="canvasLocation" x="1153.6231884057972" y="317.41071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4wC-a1-VHR">
