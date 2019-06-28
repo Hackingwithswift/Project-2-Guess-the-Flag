@@ -48,15 +48,15 @@ class ViewController: UIViewController {
         
         button1.layer.borderColor = UIColor.lightGray.cgColor
         button2.layer.borderColor = UIColor(red: 1.0, green: 0.6, blue: 0.2, alpha: 1.0).cgColor
-
+        
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
         
-        askQuestion()
+        askQuestion(action: nil)
     }
     
-    func askQuestion()  {
-        
+    func askQuestion(action: UIAlertAction! = nil) {
+
         
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
@@ -67,5 +67,26 @@ class ViewController: UIViewController {
         
         title = countries[correctAnswer].uppercased()
     }
+    
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        
+        if (sender as AnyObject).tag == correctAnswer {
+            title = "Coorrect"
+            score += 1
+        }else{
+            title = "Wrong"
+            score -= 1
+        
+            
+        }
+        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        present(ac, animated: true)
+        
+    }
+    
+    
+    
 }
 
