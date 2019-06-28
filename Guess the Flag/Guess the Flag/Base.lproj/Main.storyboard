@@ -14,27 +14,27 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_the_Flag" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="UIview">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rB-TA-0g0">
                                 <rect key="frame" x="100" y="485" width="214" height="99"/>
-                                <state key="normal" title="Button" image="germany"/>
+                                <state key="normal" image="germany"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86u-zN-tlf">
                                 <rect key="frame" x="100" y="151" width="214" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="SKe-aH-AsE"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="estonia"/>
+                                <state key="normal" image="estonia"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-W9-e9z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-W9-e9z">
                                 <rect key="frame" x="100" y="303" width="214" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="cz0-rL-m9H"/>
                                 </constraints>
-                                <state key="normal" title="Button" backgroundImage="france"/>
+                                <state key="normal" image="france"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,6 +53,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="5kk-Im-wNH"/>
+                    <connections>
+                        <outlet property="button1" destination="86u-zN-tlf" id="PJc-Pq-ojF"/>
+                        <outlet property="button2" destination="Wkg-W9-e9z" id="z8P-IW-Rba"/>
+                        <outlet property="button3" destination="5rB-TA-0g0" id="Gtr-u8-SLD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
